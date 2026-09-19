@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.变量
+        // let userName = prompt("请输入你的姓名：");
+        // console.log(userName);
+
+        // let userName ='zhangsan';
+        // userName = 'lisi';
+        // console.log(userName)
+        // let uesrname;  变量的声明
+
+        // let userName = 'lisi'; //变量的定义
+        // let userName,userAge; //一次可以声明多个变量，用逗号分
+        // let uesrAge= 19,userName ='lisi';//一次定义多个变量，变量之间用逗号分开
+
+        // 2.常量
+        // const PI = 3.14; //定义一个常量：声明的时候，必须给赋值
+
+        // 标识符命名规则：
+        // 1.严格区分大小
+        // 2.数字、字母、下划线_、还可以是中文（不推荐）
+        // 3.数字不能开头
+        // 4.不能是关键字、保留字
+        // 规范：
+        // 驼峰命名法 userName
+        // 知其名见其意：age
+
+
+        //3.作用域 （变量、常量/生效区域）
+        // let age =19;
+        // {
+        //     let age =18;
+        // }
+        // console.log(age)
+        // 块级作用域
+        // {
+        //     var age = 19;
+        // }
+        // console.log(age);
+
+        // {
+        //     const PI =3.14;
+        // }
+        // console.log(PI);
+
+
+        let apple1='青苹果'
+        let apple2='红苹果'
+        let temp;
+        temp=apple1;
+        apple1= apple2;
+        apple2= temp;
+        console.log(apple1,apple2);
+
+        let a ='青苹果';
+        let b ='红苹果';
+        [a, b] = [b, a];  // 加分号更保险
+        console.log(a,b);
+    </script>
+</body>
+</html>
